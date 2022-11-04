@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Photo slider</title>
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="img-wrapper">
+      <button class="btn-main" id="btnPrev" onclick="photoChangePrev()">&lt;</button>
+      <button class="btn-main" id="btnNext" onclick="photoChangeNext()">&gt;</button>
+      <img src="./img/photo1.png" id="mainImg">
+    </div>
+    <div class="dots-wrapper">
+      <button class="btn-dot active" onclick="directPhotoChange(0)" id="btnDot0"></button>
+      <button class="btn-dot" onclick="directPhotoChange(1)" id="btnDot1"></button>
+      <button class="btn-dot" onclick="directPhotoChange(2)" id="btnDot2"></button>
+      <button class="btn-dot" onclick="directPhotoChange(3)" id="btnDot3"></button>
+      <button class="btn-dot" onclick="directPhotoChange(4)" id="btnDot4"></button>
+      <button class="btn-dot" onclick="directPhotoChange(5)" id="btnDot5"></button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
