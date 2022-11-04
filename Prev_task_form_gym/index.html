@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gym client form</title>
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="form-wrapper">
+      <div class="main-title">
+        <h1>РЕЄСТРАЦІЙНА ФОРМА</h1>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Ваше ім'я:</div>
+        <input type="text" id="clientName" class="input-field">
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Ваш вік:</div>
+        <input type="number" id="clientAge" class="input-field">
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Ваша вага (кг):</div>
+        <input type="number" id="clientWeight" class="input-field">
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Ваш зріст (см):</div>
+        <input type="number" id="clientHeight" class="input-field">
+      </div>
+      <div>
+        <button id="sendData" class="registr-button" onclick="registration()">Зареєструватися</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

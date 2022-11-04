@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Element changer</title>
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <div class="form-wrapper">
+      <div class="main-title">
+        <h1>ELEMENT STYLE CHANGER</h1>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Width:</div>
+        <input type="number" id="widthEl" class="input-field">
+        <select id="widthChooser" class="input-field select-field">
+          <option value="px">px</option>
+          <option value="%">%</option>
+        </select>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Height:</div>
+        <input type="number" id="heightEl" class="input-field">
+        <select id="heightChooser" class="input-field select-field">
+          <option value="px">px</option>
+          <option value="%">%</option>
+        </select>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Background color:</div>
+        <input type="color" id="bgColorEl" class="input-field" list="colors" value="#9d92ac">
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Border color:</div>
+        <input type="color" id="borderColorEl" class="input-field" list="colors" value="#42167a">
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Border radius:</div>
+        <input type="number" id="borderRadiusEl" class="input-field">
+        <select id="borderRadiusChooser" class="input-field select-field">
+          <option value="%">%</option>
+          <option value="px">px</option>
+        </select>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-title">Font color:</div>
+        <input type="color" id="fontColorEl" class="input-field" list="colors" value="#222222">
+      </div>
+      <div class="arrows-wrapper">
+        <h2>MOVE ELEMENT WITH ARROWS</h2>
+        <button id="arrowUp" class="arrow" onclick="moveElUp()" onmousedown="runElUp()">&gt;</button>
+        <button id="arrowRight" class="arrow" onclick="moveElRight()" onmousedown="runElRight()">&gt;</button>
+        <button id="arrowDown" class="arrow" onclick="moveElDown()" onmousedown="runElDown()">&gt;</button>
+        <button id="arrowLeft" class="arrow" onclick="moveElLeft()" onmousedown="runElLeft()">&gt;</button>
+      </div>
+      <div class="buttons-wrapper">
+        <button id="changeButton" class="accept-button" onclick="acceptChanges()">CHANGE</button>
+        <button id="clearButton" class="accept-button" onclick="clearAllChanges()">CLEAR</button>
+      </div>
+    </div>
+    <div id="mainEl">
+      <div class="el-test">Change me</div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

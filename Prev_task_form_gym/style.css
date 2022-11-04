@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(34, 34, 34);
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+/* СУПЕР-КОД ЩОБ ПРИБРАТИ СТРЕЛОЧКИ З ІНПУТІВ */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+input {
+  display: inline;
+}
+
+.main-wrapper {
+  margin: 100px auto;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  padding: 15px 20px 20px;
+  height: 450px;
+  width: 550px;
+  border: 4px solid rgb(21, 150, 96);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(211, 248, 236);
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.input-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.input-field {
+  height: 37px;
+  border: 3px solid rgb(21, 150, 96);
+  width: 250px;
+  align-self: end;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 0 5px;
+}
+
+.input-field:focus {
+  border: 3px solid rgb(0, 82, 48);
+  outline:none;
+}
+
+.registr-button {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 3px solid rgb(21, 150, 96);
+  background-color: rgb(243, 253, 244);
+}
+
+.registr-button:hover {
+  border: 3px solid rgb(0, 82, 48);
+  background-color: rgb(0, 82, 48);
+  color: aliceblue;
+  transition-duration: 0.07s;
+  transform: scale(1.07);
+}
