@@ -1,15 +1,6 @@
 let mainImgEl = document.getElementById('mainImg');
-const btnDots = document.getElementsByClassName('btn-dot');
+let btnDots = document.getElementsByClassName('btn-dot');
 let currentPhoto = 0;
-
-let photos = [
-  "./img/photo1.png",
-  "./img/photo2.png",
-  "./img/photo3.png",
-  "./img/photo4.png",
-  "./img/photo5.png",
-  "./img/photo6.png"
-]
 
 function directPhotoChange(photoNumb) {
   mainImgEl.src = photos[photoNumb];
