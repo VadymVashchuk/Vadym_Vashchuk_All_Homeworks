@@ -19,7 +19,7 @@ function directPhotoChange(photoNumb) {
 
 function photoChangeNext() {
   currentPhoto++;
-  if (currentPhoto === 6) {
+  if (currentPhoto === photos.length) {
     currentPhoto = 0;
   }
   mainImgEl.src = photos[currentPhoto];
@@ -29,7 +29,7 @@ function photoChangeNext() {
 function photoChangePrev() {
   currentPhoto--;
   if (currentPhoto === -1) {
-    currentPhoto = 5;
+    currentPhoto = photos.length - 1;
   }
   mainImgEl.src = photos[currentPhoto];
   btnColorChange()
