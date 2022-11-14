@@ -9,13 +9,10 @@ let photos = [
   "./img/photo6.png"
 ]
 
-function addButtons() {
-  for (i = 0; i < photos.length; i++)
-    if (i === 0) {
-      dotsWrapper.innerHTML += "<button class='btn-dot active' onclick='directPhotoChange(" + i + ")' id='dot" + i + "'></button>";
-    } else {
-      dotsWrapper.innerHTML += "<button class='btn-dot' onclick='directPhotoChange(" + i + ")' id='dot" + i + "'></button>";
-    }
+for (i = 0; i < photos.length; i++) {
+  if (i === 0) {
+    dotsWrapper.innerHTML += "<button class='btn-dot active' onclick='directPhotoChange(" + i + ")' id='dot" + i + "'></button>";
+  } else {
+    dotsWrapper.innerHTML += "<button class='btn-dot' onclick='directPhotoChange(" + i + ")' id='dot" + i + "'></button>";
+  }
 }
-
-addButtons();
