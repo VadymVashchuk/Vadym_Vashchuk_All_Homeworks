@@ -1,21 +1,43 @@
 
-let data = [1,2,3,4,5,88,7,9]
+let data = [1, 2, 3, 4, 5, 88, 7, 9]
 let result = [];
 
-function sortArray() {
-  for (y = 0; y < data.length; y++) {
-    let maximum = data[y];
-    for (i = y; i < data.length; i++) {
-      if (data[i] >= maximum) {
-        maximum = data[i];
+//Мій перший варіант
+
+function sortArray(array) {
+  result = array;
+  for (y = 0; y < result.length; y++) {
+    let maximum = result[y];
+    for (i = y; i < result.length; i++) {
+      if (result[i] >= maximum) {
+        maximum = result[i];
       }
     }
-    x = data.lastIndexOf(maximum);
-    data.splice(x, 1);
-    data.unshift(maximum);
+    x = result.lastIndexOf(maximum);
+    result.splice(x, 1);
+    result.unshift(maximum);
   }
-  return [data];
+  return [result];
 }
 
-sortArray();
-console.log(data);
+sortArray(data);
+console.log(result);
+
+
+//Метод бульки
+
+function sortArrayBubble(array) {
+  result = array;
+  for (y = 0; y < array.length; y++) {
+    for (i = 0; i < array.length; i++) {
+      if (result[i] > result[i + 1]) {
+        changingNumber = result.splice(i, 1)[0]; /// нащо тут [0] ?????
+        result.splice(i + 1, 0, changingNumber);
+      }
+    }
+  }
+  return [array];
+}
+
+sortArrayBubble(data);
+console.log(result);
