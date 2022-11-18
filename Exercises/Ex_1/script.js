@@ -33,8 +33,9 @@ function sortArrayBubble(array) {
     changeNumberPosition = false;
     for (i = 0; i < array.length; i++) {
       if (result[i] > result[i + 1]) {
-        changingNumber = result.splice(i, 1)[0];
-        result.splice(i + 1, 0, changingNumber);
+        x = result[i];
+        result[i] = result[i + 1];
+        result [i + 1] = x;
         changeNumberPosition = true;
       }
     }
