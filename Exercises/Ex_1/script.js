@@ -28,13 +28,18 @@ console.log(result);
 
 function sortArrayBubble(array) {
   result = array;
-  for (y = 0; y < array.length; y++) {
+  let changeNumberPosition = false;
+  y = 0;
+  while (changeNumberPosition || y < array.length) {
+    changeNumberPosition = false;
     for (i = 0; i < array.length; i++) {
       if (result[i] > result[i + 1]) {
-        changingNumber = result.splice(i, 1)[0]; /// нащо тут [0] ?????
+        changingNumber = result.splice(i, 1)[0];
         result.splice(i + 1, 0, changingNumber);
+        changeNumberPosition = true;
       }
     }
+    y++;
   }
   return [array];
 }
