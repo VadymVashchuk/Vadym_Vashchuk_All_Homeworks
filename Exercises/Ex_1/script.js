@@ -29,8 +29,7 @@ console.log(result);
 function sortArrayBubble(array) {
   result = array;
   let changeNumberPosition = false;
-  y = 0;
-  while (changeNumberPosition || y < array.length) {
+  while (changeNumberPosition) {
     changeNumberPosition = false;
     for (i = 0; i < array.length; i++) {
       if (result[i] > result[i + 1]) {
@@ -39,7 +38,6 @@ function sortArrayBubble(array) {
         changeNumberPosition = true;
       }
     }
-    y++;
   }
   return [array];
 }
