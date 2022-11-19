@@ -20,7 +20,7 @@ function sortArray(array) {
   return [result];
 }
 
-sortArray(data);
+sortArray([1,33,2,5,56,34,426,3463,4634,634]);
 console.log(result);
 
 
@@ -28,19 +28,19 @@ console.log(result);
 
 function sortArrayBubble(array) {
   result = array;
-  let changeNumberPosition = false;
+  let changeNumberPosition = true;
   while (changeNumberPosition) {
     changeNumberPosition = false;
     for (i = 0; i < array.length; i++) {
       if (result[i] > result[i + 1]) {
-        x = result[i];
+        changingValue = result[i];
         result[i] = result[i + 1];
-        result [i + 1] = x;
+        result [i + 1] = changingValue;
         changeNumberPosition = true;
       }
     }
   }
-  return [array];
+  return [result];
 }
 
 sortArrayBubble(data);
